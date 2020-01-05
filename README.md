@@ -2,6 +2,12 @@
 
 This repo will do everything for you; including download the latest server files.
 
+## Official Links
+
+-   [alt:V Website](https://altv.mp/#/)
+-   [alt:V Forums](https://forum.altv.mp/)
+-   [alt:V Discord](https://discordapp.com/invite/q3zUUEC)
+
 ### Installation
 
 Install NodeJS Prior to Starting
