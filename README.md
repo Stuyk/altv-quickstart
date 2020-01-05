@@ -1,28 +1,51 @@
-### Want to start with alt:V Fast?
-
----
+## alt:V - Quick Start
 
 This repo will do everything for you; including download the latest server files.
-It's quite easy.
 
-Here's what you do.
+### Installation
 
-```
--1. Install NodeJS
+Install NodeJS Prior to Starting
 
 0. Open a command prompt in a folder.
 
 1. Run this:
-    git clone https://github.com/Stuyk/altv-quickstart
 
-2. Type `npm run update`.
+```
+git clone https://github.com/Stuyk/altv-quickstart
+cd altv-quickstart
+```
+
+2. Run the code block below this.
    5.1. This can be used whenever you need to update your server files.
-   5.2. Follow the instructions on screen.
+   5.2. Run the code block below; wait for packages to install.
+   5.2. Then follow the instructions on screen.
 
-3. Run `altv-server.exe` OR `./start.sh` if you're on linux.
-   5.1. Try running these from console; it gives a better experience.
-   5.2. Double Tip; Use VSCode's built in command line to run it by pressing `Ctrl + Shift + ``
-   5.3. Press Ctrl + C to stop the server.
+```
+npm run update
+```
+
+3. Bootup the Server
+   3.1. This script downloads for Linux or Windows automatically.
+   3.2. Use a screen on Linux to run the server in the background.
+   3.3. Use a built in command prompt such as in VSCode to run the server.
+   3.4. You may press `Ctrl + C` to stop the server at any time.
+
+Linux:
+
+```
+./start.sh
+```
+
+Windows (CMD):
+
+```
+altv-server.exe
+```
+
+Windows (Powershell):
+
+```
+./altv-server.exe
 ```
 
 ### Useful Links
