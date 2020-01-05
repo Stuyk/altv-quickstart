@@ -112,3 +112,7 @@ import * as alt from 'alt-server'
 /// <reference types="@altv/types" />
 import * as alt from 'alt-client'
 ```
+
+### Known Issues
+
+If you get an issue saying that it can't use `require` for the install. What you can do instead is remove the `type: "module"` from the `package.json` file. **REMEMBER TO PUT IT BACK AFTER YOU INSTAll/UPDATE**.
