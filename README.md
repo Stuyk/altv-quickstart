@@ -16,19 +16,26 @@ cd altv-quickstart
 ```
 
 2. Run the code block below this.
-   5.1. This can be used whenever you need to update your server files.
-   5.2. Run the code block below; wait for packages to install.
-   5.2. Then follow the instructions on screen.
+
+    5.1. This can be used whenever you need to update your server files.
+
+    5.2. Run the code block below; wait for packages to install.
+
+    5.2. Then follow the instructions on screen.
 
 ```
 npm run update
 ```
 
 3. Bootup the Server
-   3.1. This script downloads for Linux or Windows automatically.
-   3.2. Use a screen on Linux to run the server in the background.
-   3.3. Use a built in command prompt such as in VSCode to run the server.
-   3.4. You may press `Ctrl + C` to stop the server at any time.
+
+    3.1. This script downloads for Linux or Windows automatically.
+
+    3.2. Use a screen on Linux to run the server in the background.
+
+    3.3. Use a built in command prompt such as in VSCode to run the server.
+
+    3.4. You may press `Ctrl + C` to stop the server at any time.
 
 Linux:
 
@@ -47,6 +54,14 @@ Windows (Powershell):
 ```
 ./altv-server.exe
 ```
+
+### Recommend VSCode Plugins
+
+-   [alt:V Auto Complete for VSCode](https://marketplace.visualstudio.com/items?itemName=stuyk.atlv-complete)
+
+-   [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+
+-   [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
 
 ### Useful Links
 
@@ -77,7 +92,8 @@ npm i -D @altv/native-types
 ```
 
 2. Replace current imports with these special imports.
-   2.1 For Server:
+
+    2.1 For Server:
 
 ```
 /// <reference types="@altv/types" />

@@ -1,7 +1,7 @@
 {
-    "name": "altv-orp",
+    "name": "altv-quickstart",
     "version": "0.0.1",
-    "description": "An open source roleplay project for alt:V",
+    "description": "A Quick Start Project for alt:V",
     "main": "index.js",
     "scripts": {
         "update": "npm install && node ./install.js"
