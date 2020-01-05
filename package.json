@@ -1,0 +1,23 @@
+{
+    "name": "altv-orp",
+    "version": "0.0.1",
+    "description": "An open source roleplay project for alt:V",
+    "main": "index.js",
+    "scripts": {
+        "update": "npm install && node ./install.js"
+    },
+    "author": "Stuyk",
+    "dependencies": {
+        "download": "^7.1.0"
+    },
+    "type": "module",
+    "devDependencies": {
+        "prettier": "^1.18.2"
+    },
+    "prettier": {
+        "printWidth": 90,
+        "tabWidth": 4,
+        "singleQuote": true,
+        "bracketSpacing": true
+    }
+}
