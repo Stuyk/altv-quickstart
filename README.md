@@ -28,14 +28,21 @@ Here's what you do.
 
 ### Useful Links
 
-[alt:V Getting Started Guide](https://wiki.altv.mp/Tutorial_Getting_Started)
-[alt:V JS Tutorial Series](https://www.youtube.com/watch?v=sMWCcTv4kqY&list=PLBNRUifAMZ-MzLjb-lzOTJy-PyuN6ffgw)
-[alt:V Natives Repo](https://natives.altv.mp)
-[alt:V JS Docs](https://altmp.github.io/altv-typings/modules/_alt_server_.html)
-[alt:V Wiki](http://wiki.altv.mp/)
-[alt:V O:RP Resource](https://github.com/Stuyk/altV-Open-Roleplay-altLife-Official)
-[alt:V Auto Complete for VSCode](https://marketplace.visualstudio.com/items?itemName=stuyk.atlv-complete)
-[alt:V Attack and Defense](https://github.com/Stuyk/altV-Attack-Defense)
+-   [alt:V Getting Started Guide](https://wiki.altv.mp/Tutorial_Getting_Started)
+
+-   [alt:V JS Tutorial Series](https://www.youtube.com/watch?v=sMWCcTv4kqY&list=PLBNRUifAMZ-MzLjb-lzOTJy-PyuN6ffgw)
+
+-   [alt:V Natives Repo](https://natives.altv.mp)
+
+-   [alt:V JS Docs](https://altmp.github.io/altv-typings/modules/_alt_server_.html)
+
+-   [alt:V Wiki](http://wiki.altv.mp/)
+
+-   [alt:V O:RP Resource](https://github.com/Stuyk/altV-Open-Roleplay-altLife-Official)
+
+-   [alt:V Auto Complete for VSCode](https://marketplace.visualstudio.com/items?itemName=stuyk.atlv-complete)
+
+-   [alt:V Attack and Defense](https://github.com/Stuyk/altV-Attack-Defense)
 
 ### Other Useful Info
 
