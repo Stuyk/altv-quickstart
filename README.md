@@ -2,6 +2,10 @@
 
 This repo will do everything for you; including download the latest server files.
 
+## Requirements
+
+-   NodeJS V13+
+
 ## Official Links
 
 -   [alt:V Website](https://altv.mp/#/)
@@ -23,11 +27,11 @@ cd altv-quickstart
 
 2. Run the code block below this.
 
-    5.1. This can be used whenever you need to update your server files.
+    2.1. This can be used whenever you need to update your server files.
 
-    5.2. Run the code block below; wait for packages to install.
+    2.2. Run the code block below; wait for packages to install.
 
-    5.2. Then follow the instructions on screen.
+    2.3. Then follow the instructions on screen.
 
 ```
 npm run update
@@ -112,7 +116,3 @@ import * as alt from 'alt-server'
 /// <reference types="@altv/types" />
 import * as alt from 'alt-client'
 ```
-
-### Known Issues
-
-If you get an issue saying that it can't use `require` for the install. What you can do instead is remove the `type: "module"` from the `package.json` file. **REMEMBER TO PUT IT BACK AFTER YOU INSTAll/UPDATE**.

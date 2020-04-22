@@ -1,17 +1,13 @@
-const fs = require('fs');
-const download = require('download');
-const path = require('path');
-const exec = require('child_process').exec;
+import fs from 'fs';
+import download from 'download';
+import { exec } from 'child_process';
+import rl from 'readline';
+
 const platform = process.platform === 'win32' ? 'windows' : 'linux';
-const readline = require('readline').createInterface({
+const readline = rl.createInterface({
     input: process.stdin,
     output: process.stdout
 });
-
-let discordAppInfo = {
-    discord: '',
-    token: ''
-};
 
 let options = {
     1: 'Update Server Files',
@@ -20,54 +16,54 @@ let options = {
 
 let windowsURLS = [
     {
-        url: `https://cdn.altv.mp/node-module/beta/x64_win32/update.json`,
+        url: `https://cdn.altv.mp/node-module/CHANGE_ME/x64_win32/update.json`,
         destination: '.'
     },
     {
-        url: `https://cdn.altv.mp/node-module/beta/x64_win32/modules/node-module.dll`,
+        url: `https://cdn.altv.mp/node-module/CHANGE_ME/x64_win32/modules/node-module.dll`,
         destination: './modules'
     },
     {
-        url: `https://cdn.altv.mp/node-module/beta/x64_win32/libnode.dll`,
+        url: `https://cdn.altv.mp/node-module/CHANGE_ME/x64_win32/libnode.dll`,
         destination: '.'
     },
     {
-        url: `https://cdn.altv.mp/server/beta/x64_win32/altv-server.exe`,
+        url: `https://cdn.altv.mp/server/CHANGE_ME/x64_win32/altv-server.exe`,
         destination: '.'
     },
     {
-        url: `https://cdn.altv.mp/server/beta/x64_win32/data/vehmodels.bin`,
+        url: `https://cdn.altv.mp/server/CHANGE_ME/x64_win32/data/vehmodels.bin`,
         destination: './data'
     },
     {
-        url: `https://cdn.altv.mp/server/beta/x64_win32/data/vehmods.bin`,
+        url: `https://cdn.altv.mp/server/CHANGE_ME/x64_win32/data/vehmods.bin`,
         destination: './data'
     }
 ];
 
 let linuxURLS = [
     {
-        url: `https://cdn.altv.mp/node-module/beta/x64_linux/update.json`,
+        url: `https://cdn.altv.mp/node-module/CHANGE_ME/x64_linux/update.json`,
         destination: '.'
     },
     {
-        url: `https://cdn.altv.mp/node-module/beta/x64_linux/modules/libnode-module.so`,
+        url: `https://cdn.altv.mp/node-module/CHANGE_ME/x64_linux/modules/libnode-module.so`,
         destination: './modules'
     },
     {
-        url: `https://cdn.altv.mp/node-module/beta/x64_linux/libnode.so.72`,
+        url: `https://cdn.altv.mp/node-module/CHANGE_ME/x64_linux/libnode.so.72`,
         destination: '.'
     },
     {
-        url: `https://cdn.altv.mp/server/beta/x64_linux/altv-server`,
+        url: `https://cdn.altv.mp/server/CHANGE_ME/x64_linux/altv-server`,
         destination: '.'
     },
     {
-        url: `https://cdn.altv.mp/server/beta/x64_linux/data/vehmodels.bin`,
+        url: `https://cdn.altv.mp/server/CHANGE_ME/x64_linux/data/vehmodels.bin`,
         destination: './data'
     },
     {
-        url: `https://cdn.altv.mp/server/beta/x64_linux/data/vehmods.bin`,
+        url: `https://cdn.altv.mp/server/CHANGE_ME/x64_linux/data/vehmods.bin`,
         destination: './data'
     },
     {
@@ -131,47 +127,40 @@ async function startup() {
         res = undefined;
         console.log('Updating Server Files');
         console.log('Select Branch');
-        console.log('0: Stable [Default]');
-        console.log('1: Beta');
-        console.log('2: Alpha');
+        console.log('0: Release [Default]');
+        console.log('1: Release Candidate');
+        console.log('2: Dev');
         res = await question('Select Branch: ');
 
         if (!res) {
             res = 0;
         }
 
+        let branchSelection;
         if (parseInt(res) === 0) {
-            if (platform === 'windows') {
-                console.log('Windows');
-                windowsURLS.forEach(res => {
-                    res.url = res.url.replace('beta', 'stable');
-                });
-                console.log('You have selected the STABLE branch.');
-            } else {
-                console.log('Linux');
-                linuxURLS.forEach(res => {
-                    res.url = res.url.replace('beta', 'stable');
-                });
-                console.log('You have selected the STABLE branch.');
-            }
+            branchSelection = 'release';
         }
 
         if (parseInt(res) === 1) {
-            console.log('You have selected the BETA branch.');
+            branchSelection = 'rc';
         }
 
         if (parseInt(res) === 2) {
-            if (platform === 'windows') {
-                windowsURLS.forEach(res => {
-                    res.url = res.url.replace('beta', 'alpha');
-                });
-                console.log('You have selected the STABLE branch.');
-            } else {
-                linuxURLS.forEach(res => {
-                    res.url = res.url.replace('beta', 'alpha');
-                });
-                console.log('You have selected the STABLE branch.');
-            }
+            branchSelection === 'dev';
+        }
+
+        if (platform === 'windows') {
+            console.log('Windows');
+            windowsURLS.forEach(res => {
+                res.url = res.url.replace('CHANGE_ME', branchSelection);
+            });
+            console.log('You have selected the release branch.');
+        } else {
+            console.log('Linux');
+            linuxURLS.forEach(res => {
+                res.url = res.url.replace('CHANGE_ME', branchSelection);
+            });
+            console.log('You have selected the release branch.');
         }
 
         if (platform === 'windows') {
