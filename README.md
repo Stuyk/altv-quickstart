@@ -65,6 +65,31 @@ Windows (Powershell):
 ./altv-server.exe
 ```
 
+### Connecting to your Quick-Start alt:V Server
+
+Simply put in the following direct connect url: `127.0.0.1:7788`
+
+### Broadcasting Your Server
+
+Your server can be broadcasted by getting a token from the alt:V bot in the Discord.
+
+Message `Master-Bot#3667` and it will instruct you on what to type.
+
+After doing this simply set announce to true in your `server.cfg`.
+
+### Reconnecting to your Server
+
+If you wish to reconnect to your server after restarting you need to enable debug mode on both your client and your server.
+
+In your server.cfg put the following:
+
+`debug: true`
+
+In your altv.cfg for your alt:V client put the following:
+`debug: true`
+
+This will fully allow you to reconnect to your server.
+
 ### Recommend VSCode Plugins
 
 -   [alt:V Auto Complete for VSCode](https://marketplace.visualstudio.com/items?itemName=stuyk.atlv-complete)

@@ -8,6 +8,7 @@
     },
     "author": "Stuyk",
     "dependencies": {
+        "chalk": "^4.0.0",
         "download": "^7.1.0"
     },
     "type": "module",
@@ -15,7 +16,7 @@
         "prettier": "^1.18.2"
     },
     "prettier": {
-        "printWidth": 90,
+        "printWidth": 120,
         "tabWidth": 4,
         "singleQuote": true,
         "bracketSpacing": true
