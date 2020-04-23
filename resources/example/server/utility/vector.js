@@ -8,13 +8,13 @@ import * as alt from 'alt';
  * @returns {Array<alt.Player>}
  */
 export function getPlayersInRange(pos, range, dimension = 0) {
-	if (pos === undefined || range === undefined) {
+    if (pos === undefined || range === undefined) {
         throw new Error('GetPlayersInRange => pos or range is undefined');
     };
-	
-	return alt.Player.all.filter(player => {
-		return player.dimension === dimension && distance2d(pos, player.pos) <= range;
-	});
+
+    return alt.Player.all.filter(player => {
+        return player.dimension === dimension && distance2d(pos, player.pos) <= range;
+    });
 }
 
 /**
