@@ -13,7 +13,7 @@ export function getPlayersInRange(pos, range, dimension = 0) {
     };
 
     return alt.Player.all.filter(player => {
-        return player.dimension === dimension && distance2d(pos, player.pos) <= range;
+        return player.dimension === dimension && inSimpleRange(pos, player.pos, range);
     });
 }
 
@@ -131,3 +131,14 @@ export function getClosestPlayer(player) {
 export function getClosestVehicle(player) {
     return getClosestVehicle(player.pos, [...alt.Vehicle.all]);
 }
+
+/**
+ * Cheaper way to check if something (like entity) in range. Sqrt is much more CPU consuming
+ * @param  {} pos1
+ * @param  {} pos2
+ * @param  {} range
+ * @returns {boolean}
+ */
+export function inSimpleRange(pos1, pos2, range) {
+    return Math.abs(pos1.x - pos2.x) <= range && Math.abs(pos1.y - pos2.y) <= range && Math.abs(pos1.z - pos2.z) <= range;
+};
