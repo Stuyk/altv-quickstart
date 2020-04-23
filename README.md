@@ -4,7 +4,8 @@ This repo will do everything for you; including download the latest server files
 
 ## Requirements
 
--   NodeJS V13+
+-   [Git](https://git-scm.com/downloads)
+-   [NodeJS 13+](https://nodejs.org/en/download/current/)
 
 ## Official Links
 
