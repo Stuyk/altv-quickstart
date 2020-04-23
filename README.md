@@ -26,8 +26,10 @@ Includes the following:
 
 #### GIF Instructions:
 
-[Step 1 GIF](https://gfycat.com/DefiniteConstantJoey)
+[Step 1 GIF](https://gfycat.com/DefiniteConstantJoey
+
 [Step 2 GIF](https://gfycat.com/PowerfulOrderlyGartersnake)
+
 [Step 3 GIF](https://gfycat.com/CourageousDefensiveHarpyeagle)
 
 #### Text Instructions:
