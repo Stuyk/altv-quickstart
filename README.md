@@ -24,7 +24,13 @@ Includes the following:
 
 ### Installation
 
-Install NodeJS Prior to Starting
+#### GIF Instructions:
+
+[Step 1 GIF](https://gfycat.com/DefiniteConstantJoey)
+[Step 2 GIF](https://gfycat.com/PowerfulOrderlyGartersnake)
+[Step 3 GIF](https://gfycat.com/CourageousDefensiveHarpyeagle)
+
+#### Text Instructions:
 
 0. Open a command prompt in a folder.
 
