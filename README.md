@@ -98,7 +98,7 @@ In your server.cfg put the following:
 In your altv.cfg for your alt:V client put the following:
 `debug: true`
 
-This will fully allow you to reconnect to your server.
+This will fully allow you to reconnect to your server by press `f8` and typing `reconnect <password>`
 
 ### Recommend VSCode Plugins
 
