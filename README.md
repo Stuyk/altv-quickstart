@@ -2,6 +2,15 @@
 
 This repo will do everything for you; including download the latest server files.
 
+Includes the following:
+* Chat
+* Chat Commands
+* Weapon Commands
+* Vehicle Commands
+* Kill Feed
+* Respawn on Death
+* A scale-able folder structure
+
 ## Requirements
 
 -   [Git](https://git-scm.com/downloads)
