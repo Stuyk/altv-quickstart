@@ -146,7 +146,7 @@ async function startup() {
         }
 
         if (parseInt(res) === 2) {
-            branchSelection === 'dev';
+            branchSelection = 'dev';
         }
 
         if (platform === 'windows') {
