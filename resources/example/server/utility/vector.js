@@ -1,4 +1,4 @@
-import * as alt from 'alt';
+import alt from 'alt-server';
 
 /**
  * Get all players in a certain range of a position.
@@ -10,7 +10,7 @@ import * as alt from 'alt';
 export function getPlayersInRange(pos, range, dimension = 0) {
     if (pos === undefined || range === undefined) {
         throw new Error('GetPlayersInRange => pos or range is undefined');
-    };
+    }
 
     return alt.Player.all.filter(player => {
         return player.dimension === dimension && distance2d(pos, player.pos) <= range;

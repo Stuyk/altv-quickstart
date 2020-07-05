@@ -1,4 +1,5 @@
-import * as alt from 'alt';
+/// <reference types="@altv/types-server" />
+import alt from 'alt-server';
 import chalk from 'chalk';
 
 // alt:V Files to Load

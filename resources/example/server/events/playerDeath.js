@@ -1,4 +1,4 @@
-import * as alt from 'alt';
+import alt from 'alt-server';
 import chalk from 'chalk';
 import { randomPositionAround } from '../utility/vector';
 import { DEFAULT_CONFIG } from '../configuration/config';

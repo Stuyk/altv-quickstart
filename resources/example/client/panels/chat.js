@@ -1,4 +1,4 @@
-import * as alt from 'alt';
+import alt from 'alt-client';
 
 alt.log(`Loaded: panels/chat`);
 

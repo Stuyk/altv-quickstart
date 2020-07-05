@@ -1,4 +1,4 @@
-import * as alt from 'alt';
+import alt from 'alt-server';
 import chalk from 'chalk';
 
 alt.log(chalk.greenBright('Loaded: events/playerDisconnect'));

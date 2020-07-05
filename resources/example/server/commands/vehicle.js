@@ -1,4 +1,4 @@
-import * as alt from 'alt';
+import alt from 'alt-server';
 import { registerCmd } from '../systems/chat';
 import { getForwardVectorServer } from '../utility/vector';
 

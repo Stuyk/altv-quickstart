@@ -13,6 +13,8 @@
     },
     "type": "module",
     "devDependencies": {
+        "@altv/types-client": "^1.1.0",
+        "@altv/types-server": "^1.2.0",
         "prettier": "^1.18.2"
     },
     "prettier": {

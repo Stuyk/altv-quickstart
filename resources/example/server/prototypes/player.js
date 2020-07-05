@@ -1,4 +1,4 @@
-import * as alt from 'alt';
+import alt from 'alt-server';
 
 /**
  * This is how you properly extend player functionality within the resource.
