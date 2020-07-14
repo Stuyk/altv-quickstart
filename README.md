@@ -1,5 +1,17 @@
 ## alt:V - Quick Start
 
+---
+
+Created by Stuyk (Trevor Wessel)
+
+❤️ Please support my open source work by donating. I'm here to provide general context for complicated procedures for you new developers. ❤️
+
+https://github.com/sponsors/Stuyk/
+
+⭐ This repository if you found it useful!
+
+---
+
 This repo will do everything for you; including download the latest server files.
 
 Includes the following:
