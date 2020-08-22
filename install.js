@@ -154,14 +154,13 @@ async function startup() {
             windowsURLS.forEach(res => {
                 res.url = res.url.replace('%_%', branchSelection);
             });
-            console.log('You have selected the release branch.');
         } else {
             console.log('Linux');
             linuxURLS.forEach(res => {
                 res.url = res.url.replace('%_%', branchSelection);
             });
-            console.log('You have selected the release branch.');
         }
+        console.log(`You have selected the ${branchSelection} branch.`);
 
         if (platform === 'windows') {
             await downloadAll(windowsURLS);
