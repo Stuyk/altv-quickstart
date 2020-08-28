@@ -100,7 +100,7 @@ export function randomPositionAround(position, range) {
  */
 export function getClosestVectorFromGroup(pos, arrayOfPositions) {
     if (!arrayOfPositions[0]) {
-        throw new Error('There are no cars in the city.');
+        throw new Error('There are no vehicles in the city.');
     }
 
     if (!arrayOfPositions[0].pos && !arrayOfPositions[0].x) {
