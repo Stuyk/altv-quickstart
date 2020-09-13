@@ -2,11 +2,9 @@
 
 ---
 
-Created by Stuyk (Trevor Wessel)
+[❤️ Become a Sponsor of my Open Source Work](https://github.com/sponsors/Stuyk/)
 
-❤️ Please support my open source work by donating. I'm here to provide general context for complicated procedures for you new developers. ❤️
-
-https://github.com/sponsors/Stuyk/
+[⌨️ Learn how to script for alt:V](https://stuyk.github.io/altv-javascript-guide/)
 
 ⭐ This repository if you found it useful!
 
