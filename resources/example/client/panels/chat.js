@@ -54,14 +54,17 @@ function handleKeyup(key) {
 
     if (!opened && key === 0x54 && alt.gameControlsEnabled()) {
         opened = true;
+        view.focus();
         view.emit('openChat', false);
         alt.toggleGameControls(false);
     } else if (!opened && key === 0xbf && alt.gameControlsEnabled()) {
         opened = true;
+        view.focus();
         view.emit('openChat', true);
         alt.toggleGameControls(false);
     } else if (opened && key == 0x1b) {
         opened = false;
+        view.unfocus();
         view.emit('closeChat');
         alt.toggleGameControls(true);
     }
