@@ -1,10 +1,10 @@
 {
     "name": "altv-quickstart",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "description": "A Quick Start Project for alt:V",
     "main": "index.js",
     "scripts": {
-        "update": "npm install && node ./install.js"
+        "update": "altv-pkg d release"
     },
     "author": "Stuyk",
     "dependencies": {
@@ -13,8 +13,12 @@
     },
     "type": "module",
     "devDependencies": {
-        "@altv/types-client": "^1.1.0",
-        "@altv/types-server": "^1.2.0",
+        "@altv/types-client": "^1.7.6",
+        "@altv/types-natives": "^1.4.2",
+        "@altv/types-server": "^1.9.6",
+        "@altv/types-shared": "^1.0.1",
+        "@altv/types-webview": "^1.0.2",
+        "altv-pkg": "^1.1.0",
         "prettier": "^1.18.2"
     },
     "prettier": {
