@@ -28,9 +28,10 @@ Includes the following:
 -   [Git](https://git-scm.com/downloads)
 -   [NodeJS 13+](https://nodejs.org/en/download/current/)
 
-## Official Links
+## Links
 
 -   [alt:V Website](https://altv.mp/#/)
+-   [alt:V Unofficial Documentation](https://altv.stuyk.com/)
 
 ### Installation
 
